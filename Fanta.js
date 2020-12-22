@@ -92,5 +92,5 @@ if(cmd) cmd.run(bot, message, args);
 
 }) 
 
-bot.login("NzkwOTQ0ODI4MDU3MDU5MzM4.X-H-xg.zpZEXsVltbwi1jVkJkrqdUI12GM")
+bot.login(process.env.TOKEN)
 
