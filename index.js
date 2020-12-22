@@ -7,7 +7,7 @@ var bot = new Discord.Client();
 
 bot.on('ready', () => {        
     console.log("BOT IS READY");
-    bot.user.setActivity("Salut", {type: "LISTENING",});
+    bot.user.setActivity("f!help", {type: "LISTENING",});
 })
     
 
