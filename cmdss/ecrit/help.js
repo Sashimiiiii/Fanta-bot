@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
 
 		for (const file of commandFiles) {
 			const command = require(`./${file}`);
-			str +="[ s!"+ command.name + " ] " + command.description + "\n";
+			str +="[ f!"+ command.name + " ] " + command.description + "\n";
 		}
 
 		message.channel.send("```ini\n" + str + "```\n");
@@ -28,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
 	
 			for (const file of commandFiles) {
 				const command = require(`../vocal/${file}`);
-				str +="[ s!"+ command.name + " ] " + command.description + "\n";
+				str +="[ f!"+ command.name + " ] " + command.description + "\n";
 			}
 	
 			message.channel.send("```ini\n" + str + "```\n");
